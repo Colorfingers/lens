@@ -1,4 +1,6 @@
-ARG PYTHON_VERSION=3:12-rc-slim
+#bd
+# Upgrade from 3.8.1-alpine3.11 has 3 Critical and 17 high vulnerabilities
+ARG PYTHON_VERSION=3.12-rc-slim
 
 FROM python:${PYTHON_VERSION} as builder
 

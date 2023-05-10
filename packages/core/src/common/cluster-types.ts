@@ -177,7 +177,8 @@ export enum ClusterMetricsResourceType {
 /**
  * The default node shell image
  */
-export const initialNodeShellImage = "docker.io/alpine:3.13";
+/** Alpine has vulnerabilities */
+export const initialNodeShellImage = "docker.io/alpine:latest";
 
 /**
  * The data representing a cluster's state, for passing between main and renderer
